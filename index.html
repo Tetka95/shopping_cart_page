@@ -23,6 +23,7 @@
         </nav>
     </header>
     <main>
+        <h1>SHOPPING CART</h1>
         <section class="cart-content">
             <table class="product-table">
                 <thead>
@@ -66,7 +67,7 @@
             </table>
             <aside class="sidebar">
                 <div class="estimate-shipping">
-                    ESTIMATE SHIPPING AND TAX<button id="toggle-shipping">➕</button>
+                    <b>ESTIMATE SHIPPING AND TAX</b><button id="toggle-shipping">➕</button>
                     <div id="shipping-details" class="shipping-details">
                         <label for="country">Country</label>
                         <select id="country">
@@ -81,13 +82,15 @@
                     </div>
                     <hr>
                     <div class="total">
-                        <p>SUBTOTAL: <span id="total-price"></span></p>
-                        <p>SHIPPING: <span id="shipping-cost"></span></p>
+                        <p><b>SUBTOTAL: </b><span id="total-price"></span></p>
+                        <p><b>SHIPPING: </b><span id="shipping-cost"></span></p>
                         <hr>
-                        <p>ORDER TOTAL: <span id="grand-total"></span></p>
+                        <p><b>ORDER TOTAL: </b><span id="grand-total"></span></p>
                     </div>
                     <div class="checkout">
-                        <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+                        <div class="checkout">
+                            <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+                        </div>
                         <div class="checkout-multiple">
                             <a href="#">CHEKOUT WITH MULTIPLE ADDRESSES</a>
                         </div>
@@ -95,15 +98,30 @@
                 </div>
             </aside>
         </section>
+        <section class="cart-actions">
+            <div class="dicount-code">
+                <input type="text" class="code-input" placeholder="Enter Discount Code"><button type="submit" class="apply-btn">APPLY</button>
+            </div>
+            <div class="update-cart">
+                <button type="submit" class="update-cart-btn">UPDATE SHOPPING CART</button>
+            </div>
+        </section>
     </main>
     <footer>
         <nav>
             <ul>
-                <li><a href="#">Uvijeti korištenja</a></li>
-                <li><a href="#">Pravila privatsnosti</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">ABOUT US</a></li>/
+                <li><a href="#">CONTACT US</a></li>/
+                <li><a href="#">SEARCH TERMS</a></li>/
+                <li><a href="#">PRIVACY AND COOKIE POLICY</a></li>/
+                <li><a href="#">INSTALLATION VIDEOS</a></li>
             </ul>
         </nav>
+        <div class="customer-service">
+            <p>Contact our Customer Service:</p>
+            <img src="./assets/phone-line-icon.svg" width="16px" height="16px">
+            <a href="tel:((800)333-3567)">(800)333-3567</a>
+        </div>
     </footer>
     <script src="./script.js"></script>
 </body>

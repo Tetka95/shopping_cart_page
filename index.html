@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <div class="logo">Logo</div>
+            <ul class="nav-menu">
+                <li><a href="#">Početna</a></li>
+                <li><a href="#">Proizvodi</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+            <div class="header-icons">
+                <div class="search-icon">🔍</div>
+                <div class="cart-icon">🛒</div>
+                <div class="user-icon">👤</div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="cart-content">
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>SUBTOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="product-details">
+                                <img src="./assets/item.png" width="283px" height="200px" class="product-image">
+                                <div class="product-info">
+                                    <p>Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
+                                    <p class="color">Color: <span class="color-info">Black Denim</span></p>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-price="149.99">149.99 €</td>
+                        <td><input type="number" value="1" class="quantity"></td>
+                        <td class="product-total">149.99 €</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product-details">
+                                <img src="./assets/item.png" width="283px" height="200px" class="product-image">
+                                <div class="product-info">
+                                    <p>Flip Top™ PREMIUM - Complete Replacement Soft Top, Jeep 1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
+                                    <p class="color">Color: <span class="color-info">Black Denim, MATT</span></p>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-price="199.99">199.99 €</td>
+                        <td><input type="number" value="1" class="quantity"></td>
+                        <td class="product-total">199.99 €</td>
+                    </tr>
+                </tbody>
+            </table>
+            <aside class="sidebar">
+                <div class="estimate-shipping">
+                    ESTIMATE SHIPPING AND TAX<button id="toggle-shipping">➕</button>
+                    <div id="shipping-details" class="shipping-details">
+                        <label for="country">Country</label>
+                        <select id="country">
+                            <option value=""></option>
+                        </select>
+                        <br>
+                        <label for="state-province">State/Province</label>
+                        <input type="text" id="state-province">
+                        <br>
+                        <label for="postcode">Zip/Postal Code</label>
+                        <input type="text" id="postcode">
+                    </div>
+                    <hr>
+                    <div class="total">
+                        <p>SUBTOTAL: <span id="total-price"></span></p>
+                        <p>SHIPPING: <span id="shipping-cost"></span></p>
+                        <hr>
+                        <p>ORDER TOTAL: <span id="grand-total"></span></p>
+                    </div>
+                    <div class="checkout">
+                        <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+                        <div class="checkout-multiple">
+                            <a href="#">CHEKOUT WITH MULTIPLE ADDRESSES</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Uvijeti korištenja</a></li>
+                <li><a href="#">Pravila privatsnosti</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

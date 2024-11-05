@@ -93,23 +93,37 @@ header {
 
 .header-nav2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 72px;
+    height: 96px;
     background-color: #f5f5f5;
 }
 .logo {
+    margin-left: 300px;
     width: 154px;
     height: 36px;
 }
+.nav-menu2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 .nav-menu2 li {
-    display: inline;
-    margin: 0 10px;
+    display: inline-block;
+    margin-right: 30px;
+}
+.nav-menu2 li a span {
+    display: block;
 }
 .nav-menu2 a {
     color: #2f2f2f;
     text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
 }
 .nav-menu2 a:visited {
     color: #2f2f2f;
@@ -118,13 +132,76 @@ header {
 .nav-menu2 a:hover {
     color: #ffa500;
 }
-.header-icons div {
+.header-actions {
+    display: flex;
+}
+.header-actions div {
     display: inline-block;
-    margin-left: 10px;
     cursor: pointer;
 }
-.header-icons div:hover {
+.header-actions div:hover {
     color: #ffa500;
+}
+.search-bar {
+    position: relative;
+    width: 358px;
+    height: 48px;
+    margin-right: 40px;
+    margin-left: 300px;
+}
+.search-bar input {
+    width: 358px;
+    padding: 10px;
+    border: 1px solid #2f2f2f;
+    color: #828282;
+    background-color: #f5f5f5;
+}
+.search-bar input:focus {
+    border: 1px solid #ffa500;
+    outline: none;
+}
+.search-bar button {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #f5f5f5;
+    color: #2f2f2f;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    opacity: 50%;
+}
+.search-bar button:hover {
+    opacity: 100%;
+}
+.my-cart-button {
+    display: inline-flex;
+    width: 143px;
+    height: 48px;
+    background-color: #008421;
+    color: #f5f5f5;
+    font-size: 18px;
+    align-content: center;
+    justify-content: center;
+}
+.my-cart-button a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: #f5f5f5;
+    width: 100%;
+}
+.my-cart-button a:hover {
+    opacity: 50%;
+}
+.cart-img {
+    align-self: center;
+}
+.arrow-img {
+    align-self: center;
 }
 
 .shopping-cart-title {

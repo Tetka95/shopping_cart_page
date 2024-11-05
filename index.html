@@ -14,17 +14,25 @@
         <nav class="header-nav1">
             <div class="customer-service">
                 <p>Contact our Customer Service:</p>
-                <img src="./assets/phone-line-icon.svg" width="16px" height="16px">
+                <img src="./assets/phone-line-icon.svg">
                 <a href="tel:((800)333-3567)">(800)333-3567</a>
             </div>
-            <ul class="nav-menu1">
-                <li><a href="#">ABOUT US</a></li>/
-                <li><a href="#">CONTACT US</a></li>/
-                <li><a href="#">WHERE TO BUY</a></li>/
-            </ul>
-            <p>Promo message area - shipping advantages, special offers...</p>
-            <img src="./assets/user-icon.svg" alt="sign in icon" width="11.29px" height="16px" top="3px">
-            <button class="sign-in">SIGN IN</button>
+            <div class="menu">
+                <ul>
+                    <img src="./assets/oval.svg">
+                    <li><a href="#">ABOUT US</a></li>
+                    <img src="./assets/oval.svg">
+                    <li><a href="#">CONTACT US</a></li>
+                    <img src="./assets/oval.svg">
+                    <li><a href="#">WHERE TO BUY</a></li>
+                </ul>
+            </div>
+            <div class="message">
+                <p>Promo message area - shipping advantages, special offers...</p>
+            </div>
+            <div class="sign-in">
+                <img src="./assets/user-icon.svg" alt="sign in icon"><a href="#">SIGN IN</a>
+            </div> 
         </nav>
         <nav class="header-nav2">
             <div class="logo"><img src="./assets/inchoo-logo.svg" alt="inchoo logo"></div>
@@ -70,7 +78,7 @@
                     <tr>
                         <td>
                             <div class="product-details">
-                                <img src="./assets/item.png" width="283px" height="200px" class="product-image">
+                                <img src="./assets/item.png" class="product-image">
                                 <div class="product-info">
                                     <p>Flip Top™ PREMIUM - Complete Replacement Soft Top, Jeep 1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
                                     <p class="color">Color: <span class="color-info">Black Denim, MATT</span></p>
@@ -85,7 +93,10 @@
             </table>
             <aside class="sidebar">
                 <div class="estimate-shipping">
-                    <b>ESTIMATE SHIPPING AND TAX</b><button id="toggle-shipping">➕</button>
+                    <div class="shipping">
+                        <p>ESTIMATE SHIPPING AND TAX</p>
+                        <button id="toggle-shipping"><img src="./assets/plus-icon.svg" alt="+" class="plus-icon"></button>
+                    </div> 
                     <div id="shipping-details" class="shipping-details">
                         <label for="country">Country</label>
                         <select id="country">
@@ -98,15 +109,15 @@
                         <label for="postcode">Zip/Postal Code</label>
                         <input type="text" id="postcode">
                     </div>
+                </div>
+                <hr>
+                <div class="total">
+                    <p>SUBTOTAL: <span id="total-price"></span></p>
+                    <p>SHIPPING: <span id="shipping-cost"></span></p>
                     <hr>
-                    <div class="total">
-                        <p><b>SUBTOTAL: </b><span id="total-price"></span></p>
-                        <p><b>SHIPPING: </b><span id="shipping-cost"></span></p>
-                        <hr>
-                        <p><b>ORDER TOTAL: </b><span id="grand-total"></span></p>
-                    </div>
+                    <p>ORDER TOTAL: <span id="grand-total"></span></p>
                     <div class="checkout">
-                        <div class="checkout">
+                        <div>
                             <button class="checkout-btn">PROCEED TO CHECKOUT</button>
                         </div>
                         <div class="checkout-multiple">
@@ -135,9 +146,9 @@
                 <li><a href="#">INSTALLATION VIDEOS</a></li>
             </ul>
         </nav>
-        <div class="customer-service">
+        <div class="customer-service2">
             <p>Contact our Customer Service:</p>
-            <img src="./assets/phone-line-icon.svg" width="16px" height="16px">
+            <img src="./assets/phone-line-icon.svg" width="16.01px" height="16px">
             <a href="tel:((800)333-3567)">(800)333-3567</a>
         </div>
     </footer>

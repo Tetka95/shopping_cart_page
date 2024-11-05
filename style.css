@@ -1,23 +1,78 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #202020;
+    font-family: "Bebas Neue", sans-serif;
 }
-header {
+.header-nav1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: #f8f9fa;
+    width: 100%;
+    height: 48px;
+    background-color: #202020;
+    color: #f1f1f1;
 }
-.nav-menu li {
+.nav-menu1 li {
     display: inline;
     margin: 0 10px;
 }
-.nav-menu a {
+.nav-menu1 a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+.nav-menu1 a:visited {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+.nav-menu1 a:hover {
+    color: #ffa500;
+}
+.header-nav1 p {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.sign-in {
+    font-family: "Bebas Neue" sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #f1f1f1;
+    background-color: #202020;
+    border: none;
+    width: 39px;
+    height: 24px;
+    left: 20px;
+    cursor: pointer;
+}
+.header-nav2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    top: 48px;
+    background-color: #f8f9fa;
+}
+.logo {
+    width: 154px;
+    height: 36px;
+    top: 24px;
+    left: 302px;
+}
+.nav-menu2 li {
+    display: inline;
+    margin: 0 10px;
+}
+.nav-menu2 a {
     color: #000;
     text-decoration: none;
 }
-.nav-menu a:hover {
+.nav-menu2 a:visited {
+    color: #000;
+    text-decoration: none;
+}
+.nav-menu2 a:hover {
     color: #ffa500;
 }
 .header-icons div {
@@ -29,9 +84,16 @@ header {
     color: #ffa500;
 }
 
+.shopping-cart-title {
+    width: 338px;
+    height: 64px;
+    top: 200px;
+    left: 300px;
+    line-height: 64px;
+}
 h1 {
-    font-size: 48px;
-    margin-left: 150px;
+    font-weight: 400;
+    font-size: 72px;
 }
 .cart-content {
     display: flex;
@@ -95,19 +157,19 @@ h1 {
     margin-top: 10px;
 }
 select {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     width: 100%;
     border: 2px solid #b3b3b3;
     background-color: #f1f1f1;
 }
 #state-province {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;    
     width: 100%;
     border: 2px solid #b3b3b3;
     background-color: #f1f1f1;
 }
 #postcode {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;    
     width: 100%;
     border: 2px solid #b3b3b3;
     background-color: #f1f1f1;
@@ -132,11 +194,13 @@ select {
     border: none;
     background-color: green;
     padding: 10px 25px;
-    font-weight: bold;
-    font-size: 16px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
     color: #f1f1f1;
-    width: 100%;
-    height: 60px;
+    width: 246px;
+    height: 56px;
+    line-height: 24px;
     text-align: center;
     cursor: pointer;
 }
@@ -144,11 +208,13 @@ select {
     background-color: #ffa500;
 }
 .checkout-multiple a {
-    margin-top: 1rem;
     color: #000;
-    font-weight: 500;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
 }
-.checkout-multiple a:visited {
+.checkout-multiple a:hover {
     color: #ffa500;
 }
 
@@ -175,6 +241,7 @@ select {
     padding: 5px;
     width: 150px;
     height: 60px;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: bold;
     font-size: 16px;
 }
@@ -189,6 +256,7 @@ select {
     padding: 5px 10px;
     background-color: #202020;
     color: #f1f1f1;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: bold;
     font-size: 16px;
 }

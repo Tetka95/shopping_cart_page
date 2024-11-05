@@ -5,25 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="header-nav">
-            <div class="logo">Logo</div>
-            <ul class="nav-menu">
-                <li><a href="#">Početna</a></li>
-                <li><a href="#">Proizvodi</a></li>
-                <li><a href="#">Kontakt</a></li>
+        <nav class="header-nav1">
+            <div class="customer-service">
+                <p>Contact our Customer Service:</p>
+                <img src="./assets/phone-line-icon.svg" width="16px" height="16px">
+                <a href="tel:((800)333-3567)">(800)333-3567</a>
+            </div>
+            <ul class="nav-menu1">
+                <li><a href="#">ABOUT US</a></li>/
+                <li><a href="#">CONTACT US</a></li>/
+                <li><a href="#">WHERE TO BUY</a></li>/
+            </ul>
+            <p>Promo message area - shipping advantages, special offers...</p>
+            <img src="./assets/user-icon.svg" alt="sign in icon" width="11.29px" height="16px" top="3px">
+            <button class="sign-in">SIGN IN</button>
+        </nav>
+        <nav class="header-nav2">
+            <div class="logo"><img src="./assets/inchoo-logo.svg" alt="inchoo logo"></div>
+            <ul class="nav-menu2">
+                <li><a href="#">/SOFT TOP PRODUCTS</a></li>
+                <li><a href="#">/JEEP ACCESSORIES</a></li>
             </ul>
             <div class="header-icons">
                 <div class="search-icon">🔍</div>
                 <div class="cart-icon">🛒</div>
-                <div class="user-icon">👤</div>
             </div>
         </nav>
     </header>
     <main>
-        <h1>SHOPPING CART</h1>
+        <div class="shopping-cart-title">
+            <h1>SHOPPING CART</h1>
+        </div>
         <section class="cart-content">
             <table class="product-table">
                 <thead>

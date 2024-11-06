@@ -66,9 +66,9 @@
                 <thead>
                     <tr>
                         <th>Item</th>
-                        <th>Price</th>
                         <th>Qty</th>
                         <th>SUBTOTAL</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -82,9 +82,14 @@
                                 </div>
                             </div>
                         </td>
-                        <td data-price="149.99">149.99 €</td>
                         <td><input type="number" value="1" class="quantity"></td>
-                        <td class="product-total">149.99 €</td>
+                        <td class="product-total" data-price="149.99">149.99 €</td>
+                        <td>
+                            <div class="button-imgs">
+                                <img src="./assets/edit-button.svg" alt="edit cart item">
+                                <img src="./assets/delete-button.svg" alt="delete from cart">
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>
@@ -96,18 +101,27 @@
                                 </div>
                             </div>
                         </td>
-                        <td data-price="199.99">199.99 €</td>
                         <td><input type="number" value="1" class="quantity"></td>
-                        <td class="product-total">199.99 €</td>
+                        <td class="product-total" data-price="199.99">199.99 €</td>
+                        <td>
+                            <div class="button-imgs">
+                                <img src="./assets/edit-button.svg" alt="edit cart item">
+                                <img src="./assets/delete-button.svg" alt="delete from cart">
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+            <div class="summary">
+                <h1>SUMMARY</h1>
+            </div>
             <aside class="sidebar">
                 <div class="estimate-shipping">
                     <div class="shipping">
                         <p>ESTIMATE SHIPPING AND TAX</p>
                         <button id="toggle-shipping"><img src="./assets/plus-icon.svg" alt="+" class="plus-icon"></button>
                     </div> 
+                    <hr>
                     <div id="shipping-details" class="shipping-details">
                         <label for="country">Country</label>
                         <select id="country">
@@ -121,7 +135,6 @@
                         <input type="text" id="postcode">
                     </div>
                 </div>
-                <hr>
                 <div class="total">
                     <p>SUBTOTAL: <span id="total-price"></span></p>
                     <p>SHIPPING: <span id="shipping-cost"></span></p>

@@ -163,19 +163,20 @@ header {
 }
 .search-bar input {
     width: 350px;
+    height: 24px;
     padding: 10px;
-    border: 1px solid #2f2f2f;
+    border: 2px solid #2f2f2f;
     color: #828282;
     background-color: #f5f5f5;
 }
 .search-bar input:focus {
-    border: 1px solid #e0872c;
+    border: 2px solid #e0872c;
     outline: none;
 }
 .search-bar button {
     position: absolute;
     right: 0;
-    top: 40%;
+    top: 47%;
     transform: translateY(-50%);
     border: none;
     background-color: #f5f5f5;
@@ -242,10 +243,23 @@ h1 {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+.product-table th {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.product-table td {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 5px;
+}
 .product-details {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
     width: 600px;
+    padding-top: 5px;
 }
 .product-image {
     width: 283px; 
@@ -253,76 +267,114 @@ h1 {
     margin-right: 15px;
 }
 .product-info {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    justify-content: space-between;
     text-align: left;
-    font-size: 16px;
-    font-weight: bold;
+    padding-top: 5px;
+}
+.product-info p:first-child {
+    margin-top: 0;
+}
+.product-info p:last-child {
+    margin-bottom: 0;
 }
 .color {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
     font-size: 14px;
-    font-weight: bold;
 }
 .color-info {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
     font-size: 14px;
-    font-weight: normal;
     color: #b3b3b3;
 }
 .quantity {
     border: 2px solid #b3b3b3;
     width: 40px;
     height: 40px;
-    text-align: center;
+}
+.quantity:focus {
+    border: 2px solid #e0872c;
+    outline: none;
+}
+.button-imgs {
+    display: flex;
+    gap: 20px;
+}
+.button-imgs img {
+    width: 16px;
+    height: 16px;
 }
 
+.summary {
+    display: flex;
+    position: relative;
+    align-content: center;
+    top: -150px;
+    width: 100px;
+    padding: 0px;
+    background-color: none;
+    border: none;
+}
+.summary h1 {
+    margin-left: 100px;
+}
 .sidebar {
-    width: 294px;
+    width: 500px;
+    height: 339px;
     background-color: #f5f5f5;
+    overflow: hidden;
+    transition: height 0.3s ease;
 }
 .sidebar hr {
     border: 1px solid #ffffff;
-    width: 294px;
+    width: 500px;
+}
+aside span {
+    float: right;
+    text-align: right;
+    margin-right: 24px;
+}
+aside p {
+    text-align: left;
+    margin-left: 24px;
 }
 .estimate-shipping {
+    align-content: center;
     font-weight: 400;
     font-size: 18px;
-    line-height: 24px;
     color: #2f2f2f;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-top: 12px;
 }
 .shipping {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.plus-icon {
+.shipping p {
+    float: left;
+    text-align: left;
+}
+.shipping img {
     width: 16px;
     height: 16px;
+    float: right;
+    text-align: right;
 }
 .shipping-details {
+    width: 100%;
     display: none;
-    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
     font-family: "Titillium Web", sans-serif;
     font-weight: 700;
     font-size: 14px;
-    line-height: 24px;
-}
-select {
-    font-family: "Titillium Web", sans-serif;
-    width: 100%;
-    border: 2px solid #b3b3b3;
-    background-color: #f5f5f5;
-}
-#state-province {
-    font-family: "Titillium Web", sans-serif;    
-    width: 100%;
-    border: 2px solid #b3b3b3;
-    background-color: #f5f5f5;
-}
-#postcode {
-    font-family: "Titillium Web", sans-serif;    
-    width: 100%;
-    border: 2px solid #b3b3b3;
-    background-color: #f5f5f5;
 }
 #toggle-shipping {
     border: none;
@@ -333,19 +385,38 @@ select {
     cursor: pointer;
     color: #e0872c;
 }
-.total {
-    width: 294px;
-    min-height: 283px;
+.sidebar.expanded {
+    height: auto;
 }
-.total p {
-    margin-left: 24px;
-    margin-right: 24px;
+.sidebar.expanded hr {
+    display: none;
 }
-#total-price, #shipping-cost, #grand-total {
+#country,
+#state-province,
+#postcode {
+    width: 100%;
+    border: 2px solid #b3b3b3;
+    background-color: #f5f5f5;
+    font-family: "Titillium Web", sans-serif; 
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+#country:focus,
+#state-province:focus,
+#postcode:focus {
+    border: 2px solid #e0872c;
+    outline: none;
+}
+.sidebar {
+    transition: height 0.3s ease;
+}
+#total-price, 
+#shipping-cost, 
+#grand-total {
     font-family: "Titillium Web", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
 }
 .checkout {
     display: flex;
@@ -380,6 +451,12 @@ select {
 }
 .checkout-multiple a:hover {
     color: #e0872c;
+}
+.checkout-btn,
+.checkout-multiple {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .cart-actions {
@@ -423,7 +500,8 @@ select {
 }
 .apply-btn:hover {
     cursor: pointer;
-    background-color: #e0872c;
+    background-color: #008421;
+    color: #f5f5f5;
 }
 .update-cart-btn {
     width: 294px;

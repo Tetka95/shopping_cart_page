@@ -216,6 +216,9 @@ header {
     align-self: center;
 }
 
+main {
+    margin-left: 300px;
+}
 .shopping-cart-title {
     width: 338px;
     height: 64px;
@@ -228,9 +231,7 @@ h1 {
 .cart-content {
     display: flex;
     justify-content: space-between;
-    margin: 2rem;
-    margin-left: 150px;
-    margin-right: 250px;
+    margin-right: 300px;
 }
 .product-table {
     width: 70%;
@@ -335,6 +336,10 @@ select {
 .total {
     width: 294px;
     min-height: 283px;
+}
+.total p {
+    margin-left: 24px;
+    margin-right: 24px;
 }
 #total-price, #shipping-cost, #grand-total {
     font-family: "Titillium Web", sans-serif;

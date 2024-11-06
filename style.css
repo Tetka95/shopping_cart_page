@@ -36,7 +36,7 @@ header {
 }
 .customer-service a:hover {
     text-decoration: none;
-    color: #ffa500;
+    color: #e0872c;
 }
 .menu {
     margin-left: 12px;
@@ -59,7 +59,7 @@ header {
     font-size: 13px;
 }
 .menu a:hover {
-    color: #ffa500;
+    color: #e0872c;
 }
 .message {
     flex-grow: 1;
@@ -88,7 +88,7 @@ header {
     color: #f5f5f5;
 }
 .sign-in a:hover {
-    color: #ffa500;
+    color: #e0872c;
 }
 
 .header-nav2 {
@@ -117,24 +117,32 @@ header {
     margin-left: 30px;
 }
 .nav-menu2 li {
-    display: inline-block;
+    display: flex;
     margin-right: 30px;
 }
-.nav-menu2 li a span {
-    display: block;
-}
-.nav-menu2 a {
+.nav-menu2  li a {
     color: #2f2f2f;
     text-decoration: none;
     font-weight: 400;
     font-size: 24px;
+}
+.nav-menu2 li a .slash {
+    display: flex;
+    font-size: 48px;
+    margin-right: 10px;
+}
+.nav-menu2 li a .text-column {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    line-height: 1;
 }
 .nav-menu2 a:visited {
     color: #2f2f2f;
     text-decoration: none;
 }
 .nav-menu2 a:hover {
-    color: #ffa500;
+    color: #e0872c;
 }
 .header-actions {
     display: flex;
@@ -144,24 +152,24 @@ header {
     cursor: pointer;
 }
 .header-actions div:hover {
-    color: #ffa500;
+    color: #e0872c;
 }
 .search-bar {
     position: relative;
-    width: 358px;
+    width: 350px;
     height: 48px;
     margin-right: 40px;
     margin-left: 250px;
 }
 .search-bar input {
-    width: 358px;
+    width: 350px;
     padding: 10px;
     border: 1px solid #2f2f2f;
     color: #828282;
     background-color: #f5f5f5;
 }
 .search-bar input:focus {
-    border: 1px solid #ffa500;
+    border: 1px solid #e0872c;
     outline: none;
 }
 .search-bar button {
@@ -322,7 +330,7 @@ select {
 }
 #toggle-shipping:hover {
     cursor: pointer;
-    color: #ffa500;
+    color: #e0872c;
 }
 .total {
     width: 294px;
@@ -356,7 +364,7 @@ select {
     cursor: pointer;
 }
 .checkout-btn:hover {
-    background-color: #ffa500;
+    background-color: #e0872c;
 }
 .checkout-multiple a {
     color: #2f2f2f;
@@ -366,7 +374,7 @@ select {
     line-height: 16px;
 }
 .checkout-multiple a:hover {
-    color: #ffa500;
+    color: #e0872c;
 }
 
 .cart-actions {
@@ -410,7 +418,7 @@ select {
 }
 .apply-btn:hover {
     cursor: pointer;
-    background-color: #ffa500;
+    background-color: #e0872c;
 }
 .update-cart-btn {
     width: 294px;
@@ -426,7 +434,7 @@ select {
 }
 .update-cart-btn:hover {
     cursor: pointer;
-    background-color: #ffa500;
+    background-color: #e0872c;
 }
 
 footer {
@@ -449,7 +457,7 @@ footer nav ul li a {
     font-weight: 700;
 }
 footer nav ul li a:hover {
-    color: #ffa500;
+    color: #e0872c;
 }
 .customer-service2 {
     display: flex;
@@ -464,7 +472,7 @@ footer nav ul li a:hover {
     color: #f5f5f5;
 }
 .customer-service2 a:hover {
-    color: #ffa500;
+    color: #e0872c;
 }
 
 @media (max-width: 768px) {

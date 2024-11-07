@@ -77,7 +77,7 @@
                     <tr>
                         <td>
                             <div class="product-details">
-                                <img src="./assets/item.png" width="283px" height="200px" class="product-image">
+                                <img src="./assets/item.png" class="product-image">
                                 <div class="product-info">
                                     <p>Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
                                     <p class="color">Color: <span class="color-info">Black Denim</span></p>
@@ -123,7 +123,7 @@
                         <p>ESTIMATE SHIPPING AND TAX</p>
                         <button id="toggle-shipping"><img src="./assets/plus-icon.svg" alt="+" class="plus-icon"></button>
                     </div> 
-                    <hr>
+                    <hr class="hr1">
                     <div id="shipping-details" class="shipping-details">
                         <label for="country">Country</label>
                         <select id="country">
@@ -135,13 +135,18 @@
                         <br>
                         <label for="postcode">Zip/Postal Code</label>
                         <input type="text" id="postcode">
+                        <p class="flat-rate-label">Flat Rate</p>
+                        <label class="flat-rate">Fixed<p class="text2">(5.00 €)</p>
+                            <input type="radio" name="fixed" checked>
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
                 </div>
                 <div class="total">
-                    <p>SUBTOTAL: <span id="total-price"></span></p>
-                    <p>SHIPPING: <span id="shipping-cost"></span></p>
+                    <p>SUBTOTAL <span id="total-price"></span></p>
+                    <p class="p-shipping">SHIPPING <p class="included-rate">(Flat Rate - Fixed)</p><span id="shipping-cost"></span></p>
                     <hr>
-                    <p>ORDER TOTAL: <span id="grand-total"></span></p>
+                    <p class="p-grand-total">ORDER TOTAL <span id="grand-total"></span></p>
                     <div class="checkout">
                         <div>
                             <button class="checkout-btn">PROCEED TO CHECKOUT</button>

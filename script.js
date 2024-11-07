@@ -41,7 +41,8 @@ toggleButton.addEventListener('click', () => {
     }
 });
 
-const shippingCost = 5.99; // Fiksni trošak dostave i poreza u eurima
+const shippingCost = 5.99; // Fiksni trošak dostave i poreza u eurima za određeni poštanski broj
+const flatRate = 5.00; // Flat rate bez obzira na mjesto dostave
 
 function calculateTotal() {
     const rows = document.querySelectorAll('.product-table tbody tr');
@@ -59,18 +60,20 @@ function calculateTotal() {
 
     document.getElementById('total-price').textContent = `${total.toFixed(2)} €`;
 
+    let totalShippingCost = flatRate;
+    let grandTotal = total + flatRate;
     
-    const postalCode = document.getElementById('postcode').value;
-    let grandTotal = total;
+    /*document.getElementById('shipping-cost').textContent = `${flatRate.toFixed(2)} €`;
+    let grandTotal = total + flatRate;*/
 
+    const postalCode = document.getElementById('postcode').value;
     if (postalCode) {
-        document.getElementById('shipping-cost').textContent = `${shippingCost.toFixed(2)} €`;
-        grandTotal += shippingCost;
-    } else {
-        document.getElementById('shipping-cost').textContent = "0 €";
+        totalShippingCost = flatRate + shippingCost;
+        grandTotal = total + totalShippingCost;
     }
 
-   document.getElementById('grand-total').textContent = `${grandTotal.toFixed(2)} €`;
+    document.getElementById('shipping-cost').textContent = `${totalShippingCost.toFixed(2)} €`;
+    document.getElementById('grand-total').textContent = `${grandTotal.toFixed(2)} €`;
 }
 
 
